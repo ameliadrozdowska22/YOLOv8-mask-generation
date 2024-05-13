@@ -3,11 +3,11 @@ from PIL import Image
 from typing import List
 
 
-def image_user_input():
+def image_user_input() -> str | None:
     """
     This function takes the path to the image from user's input and checks if it is valid.  
     param: none
-    return: string (part to the file) or an errora
+    return: string (part to the file) or nothing
     """
     while True:
         file_path = input("Plese privide the path to your image: ")
@@ -23,7 +23,12 @@ def image_user_input():
         
         return
         
-def load_model(): 
+def load_model() -> YOLO: 
+    """
+    This function innitialises the YOLO object which is the model used throughout the program
+    param: none
+    return: YOLO (model)
+    """
     model = YOLO("yolov8m-seg.pt")
 
     return model
@@ -94,5 +99,4 @@ if __name__ == "__main__":
 
 #TO DO:
 #code comments and doc strings
-#github repository
 #documentation 
