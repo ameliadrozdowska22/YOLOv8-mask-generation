@@ -21,6 +21,7 @@ def image_user_input():
                 pass
         except FileNotFoundError:
             print("File not found. Please enter a valid file path.")
+            image_user_input()
         else:
             return file_path
         
