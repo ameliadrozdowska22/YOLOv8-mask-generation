@@ -21,8 +21,7 @@ or install the ultralytics package from GitHub by running this line on your term
 `pip install git+https://github.com/ultralytics/ultralytics.git@main`
 
 To clone this repository run this line on your terminal:
-``
-
+`https://github.com/ameliadrozdowska22/YOLOv8-mask-generation.git`
 
 ## Imports
 `from ultralytics import YOLO
@@ -32,5 +31,19 @@ from typing import List, Dict, Any
 import os
 `
 
+## Uploading the image
+After running the program you will be asked to provide the path to the image you wish to use.\
+Paste the path in the console and press enter.\
+If the path to the file is faulty or does not exist you will be informed and asked to provide a correct path.\
+
+## Saving the masks
+After the image has been processed by the program, you will be asked to provide the path to the folder, in which you wish to save generated masks.\
+Paste the path to the foulder in the console and press enter.\
+If the path to the foulder is faulty or does not exist you will be informed and asked to provide a correct path.\
+
+## Usage examples
+This program can be used to generates masks for certain furniture in a room.
+
+### Visualization of usage example:
 
 
