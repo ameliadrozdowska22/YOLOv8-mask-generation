@@ -41,6 +41,17 @@ After the image has been processed by the program, you will be asked to provide 
 Paste the path to the foulder in the console and press enter.\
 If the path to the foulder is faulty or does not exist you will be informed and asked to provide a correct path.\
 
+## Approach explanation
+Each task of the program is managed by a separate function.\
+All functions are then called by the `main()` function to ensure integrated flow\
+Tasks of the program include:
+ - loading the model, managed by the `load_model()` function
+ - obtaining the image from user input, managed by the `image_user_input()` function
+ - obtaining the results of model's predictions, managed by the `get_results()` function
+ - filtering masks of certain pieces of furniture, managed by the `filter_masks()` function
+ - creating images of the masks, managed by the `generate_mask_images()` function
+ - saving the images as PNG files on the desired folder with the names corresponding to the masked object, managed by the `save_masks()` function
+
 ## Visualization
 **1. Uploaded picture:**
 
@@ -60,11 +71,9 @@ The mask correcponds to the detected dining table\
 <img width="368" alt="Generated_masks_examplary" src="https://github.com/ameliadrozdowska22/YOLOv8-mask-generation/assets/95606503/4b2519d8-bbc3-42db-9951-666da011750c">
 
 ## Usage examples
-This program generates masks for certain furniture in a room.
+This program generates masks for certain furniture in a room.\
 Masks of detected objects are used for object segmantation.\
-Generated masks can be used to isolate the piece of furniture from the background.\
-
-### Visualization of usage example:
-## Approach explanation
-
-
+Generated masks can be used to:
+1. isolate the piece of furniture from the background.
+2. locate the piece of furniture in the room
+3. identify the number of certain furniture in the image of the room for example the number of chairs
