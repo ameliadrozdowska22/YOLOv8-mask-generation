@@ -41,10 +41,7 @@ After the image has been processed by the program, you will be asked to provide 
 Paste the path to the foulder in the console and press enter.\
 If the path to the foulder is faulty or does not exist you will be informed and asked to provide a correct path.\
 
-## Usage examples
-This program can be used to generates masks for certain furniture in a room.
-
-### Visualization of usage example:
+## Visualization
 **1. Uploaded picture:**
 
 ![exemplary_image](https://github.com/ameliadrozdowska22/YOLOv8-mask-generation/assets/95606503/3e247ebc-bf37-41cc-afea-8a54c0ded555)
@@ -62,6 +59,12 @@ The mask correcponds to the detected dining table\
 
 <img width="368" alt="Generated_masks_examplary" src="https://github.com/ameliadrozdowska22/YOLOv8-mask-generation/assets/95606503/4b2519d8-bbc3-42db-9951-666da011750c">
 
+## Usage examples
+This program generates masks for certain furniture in a room.
+Masks of detected objects are used for object segmantation.\
+Generated masks can be used to isolate the piece of furniture from the background.\
 
+### Visualization of usage example:
+## Approach explanation
 
 
