@@ -3,17 +3,17 @@ Program that integrates the YOLOv8 computer vision model to identify and generat
 
 ### Program's functionalities:
 
-**1. Filtering certain furniture from the image**
- - detectection all objects from the image
- - providing masks of only certain furniture (chair, couch, bed and dining table)
+**1. Filtering specific furniture from the image**
+ - detection of all objects from the image
+ - providing masks of only specific furniture (chair, couch, bed and dining table)
 
 **2. Mask Generation**
  - generation of masks for all the filtered furniture objects.
     
-**3. Saving to the local File**
+**3. Saving to the local file**
  - saving the masks into a local folder as PNG files with a name of the detected object.
 
-## Getting strated
+## Getting started
 To ensure that the program runs on your device first install unltralytics. Run this line of code on your terminal\
 `pip install ultralytics`
 
